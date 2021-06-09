@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>OneView</title>
+        <link rel="icon" href="images/CAS.svg">
+        <link rel="stylesheet" href="css//HomePage/home.css">
+        <link rel="stylesheet" href="css//HomePage/navbar.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,700;1,800&display=swap" rel='stylesheet' />
+
+        <!-- The main CSS file -->
+        <link href="css/HomePage/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/HomePage/uploadOverlay.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a id="logout" href="Login.html">Logout</a>
+            <div class="animation start-home"></div>
+            <img class="logo" src="images/logo.png" alt="">
+          </nav>
+        <div class="header">
+            <h1 id="head1">DROP THE</h1>
+            <h1 id="head2">COMPLAINTS!</h1>
+        </div>
+        <div>
+            
+            <img class="illust1" src="images/Homepage/illust2.png" alt="">
+            <img class="illust" src="images/Homepage/illust.png" alt="">
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              
+              <form id="upload" method="post" action="image_upload.php" enctype="multipart/form-data">
+                <div id="drop">
+                    <h6 id="brow">or DROP here</h6>
+                    <a>Browse</a>
+                    <input type="file" name="upl" multiple />
+                </div>
+                
+          
+                <ul>
+                    <!-- The file uploads will be shown here -->
+                </ul>
+          
+            </form>
+            </div>
+          </div>
+        <button class="button" onclick="openNav()">UPLOAD</button>
+            
+            <script src="Js/Homepage/upload.js" ></script>
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+             <script src="Js/Homepage/jquery.knob.js"></script>
+     
+             <!-- jQuery File Upload Dependencies -->
+             <script src="Js/Homepage/jquery.ui.widget.js"></script>
+             <script src="Js/Homepage/jquery.iframe-transport.js"></script>
+             <script src="Js/Homepage/jquery.fileupload.js"></script>
+
+             <!-- main JS file -->
+             <script src="Js/Homepage/script.js"></script>
+        
+    </body>
+</html>
